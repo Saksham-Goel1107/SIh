@@ -17,17 +17,16 @@ export default function AuthWelcome() {
             source={require('@/assets/images/logo.png')}
             style={styles.logo}
           />
-          <Text style={styles.appName}>Wallet</Text>
         </View>
 
         <View style={styles.contentContainer}>
-          <Text style={styles.welcomeTitle}>Welcome to Wallet</Text>
+          <Text style={styles.welcomeTitle}>Welcome to Dr. Dwar</Text>
           <Text style={styles.welcomeText}>
-            Your trusted companion for managing personal finances, tracking expenses, and 
-            achieving your financial goals.
+            Your trusted companion for managing your health, tracking wellness activities, and achieving your healthcare goals.
           </Text>
           
-          <View style={styles.buttonsContainer}>            <TouchableOpacity 
+          <View style={styles.buttonsContainer}>
+            <TouchableOpacity 
               style={styles.signupButton}
               onPress={() => router.push('/(auth)/sign-up')}
             >
@@ -46,7 +45,8 @@ export default function AuthWelcome() {
             <Text style={styles.termsText}>
               By creating an account, you agree to our
             </Text>
-            <View style={styles.termsLinks}>              <TouchableOpacity onPress={() => router.push('/(auth)/terms')}>
+            <View style={styles.termsLinks}>
+              <TouchableOpacity onPress={() => router.push('/(auth)/terms')}>
                 <Text style={styles.link}>Terms of Service</Text>
               </TouchableOpacity>
               <Text style={styles.termsText}>, </Text>
@@ -80,8 +80,8 @@ const styles = StyleSheet.create({
     marginBottom: 40,
   },
   logo: {
-    width: 100,
-    height: 100,
+    width: 200,
+    height: 200,
     resizeMode: 'contain',
   },
   appName: {

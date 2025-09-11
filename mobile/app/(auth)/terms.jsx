@@ -22,13 +22,13 @@ return (
             
             <Text style={styles.sectionTitle}>1. Acceptance of Terms</Text>
             <Text style={styles.paragraph}>
-                By accessing or using the Wallet application (&quots;the App&quots;), you agree to be bound by these Terms and Conditions. 
+                By accessing or using the Dr. Dwar application (&quots;the App&quots;), you agree to be bound by these Terms and Conditions. 
                 If you do not agree to these terms, please do not use the App.
             </Text>
 
             <Text style={styles.sectionTitle}>2. Description of Service</Text>
             <Text style={styles.paragraph}>
-                The Wallet App is a financial management tool that allows users to track their personal expenses, 
+                The Dr. Dwar App is a financial management tool that allows users to track their personal expenses, 
                 income, and manage their financial data. The App is provided on an &quots;as is&quots; and &quots;as available&quots; basis.
             </Text>
 

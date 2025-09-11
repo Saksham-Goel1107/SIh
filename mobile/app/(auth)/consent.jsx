@@ -50,7 +50,7 @@ export default function DataConsent() {
 
         <Text style={styles.paragraph}>
           Clerk processes this information according to their privacy policy to authenticate you and protect your account.
-          Your financial data in the Wallet app is not shared with Clerk.
+          Your financial data in the Dr. Dwar app is not shared with Clerk.
         </Text>
         <View style={styles.linksContainer}>
           <Text style={styles.link} onPress={() => router.replace('/terms')}>Terms and Conditions</Text>

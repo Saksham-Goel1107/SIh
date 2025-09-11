@@ -1,7 +1,7 @@
 export default {
   expo: {
-    name: "Wallet",
-    slug: "Wallet",
+    name: "Dr. Dwar",
+    slug: "Dr. Dwar",
     version: "1.0.0",
     orientation: "portrait",
     icon: "./assets/images/logo.png",

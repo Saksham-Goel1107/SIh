@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
 
                 <Text style={styles.paragraph}>
                     This Privacy Policy describes how your personal information is collected, used, and shared when you use
-                    the Wallet application (&quots;the App&quots;).
+                    the Dr. Dwar application (&quots;the App&quots;).
                 </Text>
 
                 <Text style={styles.sectionTitle}>1. Information We Collect</Text>
