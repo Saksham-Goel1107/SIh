@@ -21,24 +21,7 @@ export default function VideoCall() {
 
   return (
     <View style={{ flex: 1, backgroundColor: COLORS.background }}>
-      <View style={{ 
-        flexDirection: 'row', 
-        alignItems: 'center', 
-        padding: 20, 
-        paddingTop: 60,
-        borderBottomWidth: 1,
-        borderBottomColor: COLORS.border 
-      }}>
-        <TouchableOpacity onPress={() => router.back()}>
-          <Ionicons name="arrow-back" size={24} color={COLORS.text} />
-        </TouchableOpacity>
-        <Text style={{ 
-          fontSize: 18, 
-          fontWeight: '600', 
-          color: COLORS.text, 
-          marginLeft: 15 
-        }}>Video Call with Doctor</Text>
-      </View>
+
 
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20 }}>
         <View style={{
@@ -92,7 +75,7 @@ export default function VideoCall() {
             fontWeight: '600',
             marginLeft: 8
           }}>
-            {isConnecting ? 'Connecting...' : 'Start Video Call'}
+            {isConnecting ? 'Connecting...' : 'Consult a Doctor'}
           </Text>
         </TouchableOpacity>
       </View>

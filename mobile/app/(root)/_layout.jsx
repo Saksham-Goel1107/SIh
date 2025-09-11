@@ -428,7 +428,7 @@ export default function Layout() {
       <TouchableOpacity
         style={{
           position: 'absolute',
-          bottom: 110,
+          bottom: 130,
           right: 20,
           width: 60,
           height: 60,
