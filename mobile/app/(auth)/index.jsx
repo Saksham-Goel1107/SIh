@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native'
-import { useRouter } from 'expo-router'
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-import { COLORS } from '@/constants/colors'
+import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
+import { useRouter } from "expo-router";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import { COLORS } from "@/constants/colors";
 
 export default function AuthWelcome() {
   const router = useRouter();
@@ -14,7 +14,7 @@ export default function AuthWelcome() {
       >
         <View style={styles.logoContainer}>
           <Image
-            source={require('@/assets/images/logo.png')}
+            source={require("@/assets/images/logo.png")}
             style={styles.logo}
           />
         </View>
@@ -22,39 +22,40 @@ export default function AuthWelcome() {
         <View style={styles.contentContainer}>
           <Text style={styles.welcomeTitle}>Welcome to Dr. Dwar</Text>
           <Text style={styles.welcomeText}>
-            Your trusted companion for managing your health, tracking wellness activities, and achieving your healthcare goals.
+            Your trusted companion for managing your health, tracking wellness
+            activities, and achieving your healthcare goals.
           </Text>
-          
+
           <View style={styles.buttonsContainer}>
-            <TouchableOpacity 
+            <TouchableOpacity
               style={styles.signupButton}
-              onPress={() => router.push('/(auth)/sign-up')}
+              onPress={() => router.push("/(auth)/sign-up")}
             >
               <Text style={styles.signupButtonText}>Create an Account</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity 
+            <TouchableOpacity
               style={styles.loginButton}
-              onPress={() => router.push('/(auth)/sign-in')}
+              onPress={() => router.push("/(auth)/sign-in")}
             >
               <Text style={styles.loginButtonText}>Log In</Text>
             </TouchableOpacity>
           </View>
-          
+
           <View style={styles.termsContainer}>
             <Text style={styles.termsText}>
               By creating an account, you agree to our
             </Text>
             <View style={styles.termsLinks}>
-              <TouchableOpacity onPress={() => router.push('/(auth)/terms')}>
+              <TouchableOpacity onPress={() => router.push("/(auth)/terms")}>
                 <Text style={styles.link}>Terms of Service</Text>
               </TouchableOpacity>
               <Text style={styles.termsText}>, </Text>
-              <TouchableOpacity onPress={() => router.push('/(auth)/privacy')}>
+              <TouchableOpacity onPress={() => router.push("/(auth)/privacy")}>
                 <Text style={styles.link}>Privacy Policy</Text>
               </TouchableOpacity>
               <Text style={styles.termsText}> and </Text>
-              <TouchableOpacity onPress={() => router.push('/(auth)/consent')}>
+              <TouchableOpacity onPress={() => router.push("/(auth)/consent")}>
                 <Text style={styles.link}>Consent Policy</Text>
               </TouchableOpacity>
             </View>
@@ -68,45 +69,45 @@ export default function AuthWelcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
   },
   scrollContent: {
     flexGrow: 1,
     paddingBottom: 30,
   },
   logoContainer: {
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 60,
     marginBottom: 40,
   },
   logo: {
     width: 200,
     height: 200,
-    resizeMode: 'contain',
+    resizeMode: "contain",
   },
   appName: {
     fontSize: 28,
-    fontWeight: '700',
+    fontWeight: "700",
     color: COLORS.primary,
     marginTop: 16,
   },
   contentContainer: {
     paddingHorizontal: 20,
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
   welcomeTitle: {
     fontSize: 24,
-    fontWeight: '700',
+    fontWeight: "700",
     color: COLORS.text,
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: 16,
   },
   welcomeText: {
     fontSize: 16,
     lineHeight: 24,
-    color: '#666',
-    textAlign: 'center',
+    color: "#666",
+    textAlign: "center",
     marginBottom: 40,
     paddingHorizontal: 10,
   },
@@ -117,42 +118,42 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.primary,
     borderRadius: 8,
     paddingVertical: 15,
-    alignItems: 'center',
+    alignItems: "center",
     marginBottom: 15,
   },
   signupButtonText: {
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
   },
   loginButton: {
     borderWidth: 1,
     borderColor: COLORS.primary,
     borderRadius: 8,
     paddingVertical: 15,
-    alignItems: 'center',
+    alignItems: "center",
   },
   loginButtonText: {
     color: COLORS.primary,
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
   },
   termsContainer: {
-    alignItems: 'center',
+    alignItems: "center",
   },
   termsText: {
     fontSize: 14,
-    color: '#666',
+    color: "#666",
   },
   termsLinks: {
-    flexDirection: 'row',
-    justifyContent: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
     marginTop: 5,
-    flexWrap: 'wrap',
+    flexWrap: "wrap",
   },
   link: {
     color: COLORS.primary,
     fontSize: 14,
-    textDecorationLine: 'underline',
+    textDecorationLine: "underline",
   },
 });

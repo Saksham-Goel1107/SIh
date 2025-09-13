@@ -1,9 +1,9 @@
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { useRouter } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
-import { COLORS } from '@/constants/colors';
+import React from "react";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { useRouter } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
+import { COLORS } from "@/constants/colors";
 
 export default function DataConsent() {
   const router = useRouter();
@@ -14,14 +14,17 @@ export default function DataConsent() {
   };
   const handleContinue = () => {
     if (hasConsented) {
-      router.replace('/sign-up');
+      router.replace("/sign-up");
     }
   };
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
+        <TouchableOpacity
+          onPress={() => router.back()}
+          style={styles.backButton}
+        >
           <Ionicons name="arrow-back" size={24} color={COLORS.primary} />
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Data Sharing Consent</Text>
@@ -36,8 +39,9 @@ export default function DataConsent() {
         <Text style={styles.title}>Your Privacy Matters</Text>
 
         <Text style={styles.paragraph}>
-          To provide secure authentication services, we use Clerk, a third-party authentication provider.
-          This means some of your personal information will be shared with Clerk, including:
+          To provide secure authentication services, we use Clerk, a third-party
+          authentication provider. This means some of your personal information
+          will be shared with Clerk, including:
         </Text>
 
         <View style={styles.bulletPoints}>
@@ -49,13 +53,21 @@ export default function DataConsent() {
         </View>
 
         <Text style={styles.paragraph}>
-          Clerk processes this information according to their privacy policy to authenticate you and protect your account.
-          Your financial data in the Dr. Dwar app is not shared with Clerk.
+          Clerk processes this information according to their privacy policy to
+          authenticate you and protect your account. Your financial data in the
+          Dr. Dwar app is not shared with Clerk.
         </Text>
         <View style={styles.linksContainer}>
-          <Text style={styles.link} onPress={() => router.replace('/terms')}>Terms and Conditions</Text>
-          <Text style={styles.link} onPress={() => router.replace('/privacy')}>Privacy Policy</Text>
-          <Text style={styles.link} onPress={() => router.push('https://clerk.dev/privacy')}>
+          <Text style={styles.link} onPress={() => router.replace("/terms")}>
+            Terms and Conditions
+          </Text>
+          <Text style={styles.link} onPress={() => router.replace("/privacy")}>
+            Privacy Policy
+          </Text>
+          <Text
+            style={styles.link}
+            onPress={() => router.push("https://clerk.dev/privacy")}
+          >
             Clerk&apos;s Privacy Policy
           </Text>
         </View>
@@ -66,11 +78,12 @@ export default function DataConsent() {
             onPress={handleToggleConsent}
             activeOpacity={0.7}
           >
-            <View style={[
-              styles.checkbox,
-              hasConsented && styles.checkboxChecked
-            ]}>
-              {hasConsented && <Ionicons name="checkmark" size={16} color="white" />}
+            <View
+              style={[styles.checkbox, hasConsented && styles.checkboxChecked]}
+            >
+              {hasConsented && (
+                <Ionicons name="checkmark" size={16} color="white" />
+              )}
             </View>
             <Text style={styles.consentText}>
               I consent to share my authentication data with Clerk
@@ -81,15 +94,17 @@ export default function DataConsent() {
         <TouchableOpacity
           style={[
             styles.continueButton,
-            !hasConsented && styles.continueButtonDisabled
+            !hasConsented && styles.continueButtonDisabled,
           ]}
           onPress={handleContinue}
           disabled={!hasConsented}
         >
-          <Text style={[
-            styles.continueButtonText,
-            !hasConsented && styles.continueButtonTextDisabled
-          ]}>
+          <Text
+            style={[
+              styles.continueButtonText,
+              !hasConsented && styles.continueButtonTextDisabled,
+            ]}
+          >
             Continue to Sign Up
           </Text>
         </TouchableOpacity>
@@ -101,23 +116,23 @@ export default function DataConsent() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
   },
   header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     paddingHorizontal: 16,
     paddingVertical: 12,
     borderBottomWidth: 1,
-    borderBottomColor: '#f0f0f0',
+    borderBottomColor: "#f0f0f0",
   },
   backButton: {
     padding: 4,
   },
   headerTitle: {
     fontSize: 18,
-    fontWeight: '600',
+    fontWeight: "600",
     color: COLORS.text,
   },
   contentContainer: {
@@ -125,20 +140,20 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   iconContainer: {
-    alignItems: 'center',
+    alignItems: "center",
     marginVertical: 24,
   },
   title: {
     fontSize: 22,
-    fontWeight: '700',
+    fontWeight: "700",
     color: COLORS.text,
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: 20,
   },
   paragraph: {
     fontSize: 14,
     lineHeight: 22,
-    color: '#333',
+    color: "#333",
     marginBottom: 16,
   },
   bulletPoints: {
@@ -148,26 +163,26 @@ const styles = StyleSheet.create({
   bulletPoint: {
     fontSize: 14,
     lineHeight: 24,
-    color: '#333',
+    color: "#333",
   },
   linksContainer: {
     marginVertical: 20,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
   },
   link: {
     color: COLORS.primary,
     fontSize: 14,
     marginVertical: 4,
-    textDecorationLine: 'underline',
+    textDecorationLine: "underline",
   },
   consentContainer: {
     marginVertical: 20,
   },
   checkboxContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     marginVertical: 10,
   },
   checkbox: {
@@ -177,8 +192,8 @@ const styles = StyleSheet.create({
     borderColor: COLORS.primary,
     borderRadius: 4,
     marginRight: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   checkboxChecked: {
     backgroundColor: COLORS.primary,
@@ -186,24 +201,24 @@ const styles = StyleSheet.create({
   consentText: {
     fontSize: 14,
     flex: 1,
-    color: '#333',
+    color: "#333",
   },
   continueButton: {
     backgroundColor: COLORS.primary,
     borderRadius: 8,
     paddingVertical: 14,
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 20,
   },
   continueButtonDisabled: {
-    backgroundColor: '#d3d3d3',
+    backgroundColor: "#d3d3d3",
   },
   continueButtonText: {
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
   },
   continueButtonTextDisabled: {
-    color: '#a9a9a9',
+    color: "#a9a9a9",
   },
 });

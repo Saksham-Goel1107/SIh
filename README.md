@@ -50,6 +50,7 @@ A comprehensive financial tracking application built with React Native and Expo.
 ## 💻 Tech Stack
 
 ### Frontend (Mobile)
+
 - **React Native** - Mobile application framework
 - **Expo** - Development platform for React Native
 - **Clerk** - Authentication and user management
@@ -58,6 +59,7 @@ A comprehensive financial tracking application built with React Native and Expo.
 - **TypeScript** - Static type checking
 
 ### Backend
+
 - **Node.js** - JavaScript runtime
 - **Express.js** - Web application framework
 - **Neon Database** - Serverless PostgreSQL database
@@ -103,12 +105,14 @@ First_React_Native/
 ### Mobile App
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Saksham-Goel1107/First_React_Native.git
    cd First_React_Native/mobile
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    # or
@@ -125,11 +129,13 @@ First_React_Native/
 ### Backend Server
 
 1. Navigate to the backend directory:
+
    ```bash
    cd First_React_Native/backend
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    # or
@@ -183,12 +189,12 @@ apiUrl: "http://your-backend-url:3000"
 
 ## 📝 API Endpoints
 
-| Endpoint                              | Method | Description                       |
-|---------------------------------------|--------|-----------------------------------|
-| `/api/transactions/:userid`           | GET    | Get all user transactions         |
-| `/api/transactions/summary/:userid`   | GET    | Get financial summary for a user  |
-| `/api/transactions`                   | POST   | Create a new transaction          |
-| `/api/transactions/:id`               | DELETE | Delete a specific transaction     |
+| Endpoint                            | Method | Description                      |
+| ----------------------------------- | ------ | -------------------------------- |
+| `/api/transactions/:userid`         | GET    | Get all user transactions        |
+| `/api/transactions/summary/:userid` | GET    | Get financial summary for a user |
+| `/api/transactions`                 | POST   | Create a new transaction         |
+| `/api/transactions/:id`             | DELETE | Delete a specific transaction    |
 
 ## 📊 Database Schema
 

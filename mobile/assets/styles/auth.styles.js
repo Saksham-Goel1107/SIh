@@ -20,7 +20,8 @@ export const styles = StyleSheet.create({
     color: COLORS.text,
     marginBottom: 24,
     textAlign: "center",
-  },  input: {
+  },
+  input: {
     backgroundColor: COLORS.white,
     borderRadius: 12,
     padding: 15,
@@ -31,9 +32,9 @@ export const styles = StyleSheet.create({
     color: COLORS.text,
   },
   passwordContainer: {
-    position: 'relative',
+    position: "relative",
     marginBottom: 16,
-    width: '100%',
+    width: "100%",
   },
   passwordInput: {
     backgroundColor: COLORS.white,
@@ -43,11 +44,11 @@ export const styles = StyleSheet.create({
     borderColor: COLORS.border,
     fontSize: 16,
     color: COLORS.text,
-    width: '100%',
+    width: "100%",
     paddingRight: 50,
   },
   eyeIcon: {
-    position: 'absolute',
+    position: "absolute",
     right: 12,
     top: 12,
     padding: 4,

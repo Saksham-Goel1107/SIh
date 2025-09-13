@@ -10,47 +10,45 @@ export default {
     splash: {
       image: "./assets/images/logo.png",
       resizeMode: "contain",
-      backgroundColor: "#ffffff"
+      backgroundColor: "#ffffff",
     },
-    assetBundlePatterns: [
-      "**/*"
-    ],
+    assetBundlePatterns: ["**/*"],
     ios: {
       supportsTablet: true,
-      bundleIdentifier: "com.wallet.app"
+      bundleIdentifier: "com.wallet.app",
     },
     android: {
       adaptiveIcon: {
         foregroundImage: "./assets/images/logo.png",
-        backgroundColor: "#ffffff"
+        backgroundColor: "#ffffff",
       },
       package: "com.wallet.app",
       versionCode: 1,
-      permissions: []
+      permissions: [],
     },
     web: {
-      favicon: "./assets/images/favicon.png"
+      favicon: "./assets/images/favicon.png",
     },
     extra: {
       clerkPublishableKey: process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY,
       eas: {
-        projectId: "b939fc42-e869-41ae-9d22-4eadbd7132f9"
-      }
+        projectId: "b939fc42-e869-41ae-9d22-4eadbd7132f9",
+      },
     },
     updates: {
       url: "https://u.expo.dev/b939fc42-e869-41ae-9d22-4eadbd7132f9",
       enabled: true,
       fallbackToCacheTimeout: 0,
-      checkAutomatically: "ON_LOAD"
+      checkAutomatically: "ON_LOAD",
     },
     runtimeVersion: {
-      policy: "sdkVersion"
+      policy: "sdkVersion",
     },
     plugins: [
       "expo-font",
       "expo-router",
       "expo-secure-store",
-      "expo-web-browser"
-    ]
-  }
+      "expo-web-browser",
+    ],
+  },
 };

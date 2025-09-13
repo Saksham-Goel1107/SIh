@@ -1,7 +1,7 @@
-import { StyleSheet, Dimensions } from 'react-native'
-import { COLORS } from '../../constants/colors'
+import { StyleSheet, Dimensions } from "react-native";
+import { COLORS } from "../../constants/colors";
 
-const { width } = Dimensions.get('window')
+const { width } = Dimensions.get("window");
 
 export const profileStyles = StyleSheet.create({
   container: {
@@ -11,7 +11,7 @@ export const profileStyles = StyleSheet.create({
   scrollView: {
     flex: 1,
   },
-  
+
   // Header Profile Card
   headerCard: {
     backgroundColor: COLORS.card,
@@ -19,7 +19,7 @@ export const profileStyles = StyleSheet.create({
     marginTop: 10,
     borderRadius: 24,
     padding: 24,
-    alignItems: 'center',
+    alignItems: "center",
     shadowColor: COLORS.shadow,
     shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.12,
@@ -27,7 +27,7 @@ export const profileStyles = StyleSheet.create({
     elevation: 8,
   },
   avatarContainer: {
-    position: 'relative',
+    position: "relative",
     marginBottom: 16,
   },
   avatar: {
@@ -42,26 +42,26 @@ export const profileStyles = StyleSheet.create({
     height: 100,
     borderRadius: 50,
     backgroundColor: COLORS.primary,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     borderWidth: 4,
     borderColor: COLORS.white,
   },
   avatarText: {
     fontSize: 32,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     color: COLORS.white,
   },
   editAvatarBtn: {
-    position: 'absolute',
+    position: "absolute",
     bottom: 0,
     right: 0,
     width: 32,
     height: 32,
     borderRadius: 16,
     backgroundColor: COLORS.primary,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     borderWidth: 3,
     borderColor: COLORS.white,
     shadowColor: COLORS.shadow,
@@ -71,30 +71,30 @@ export const profileStyles = StyleSheet.create({
     elevation: 4,
   },
   userInfo: {
-    alignItems: 'center',
+    alignItems: "center",
     marginBottom: 20,
   },
   userName: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     color: COLORS.text,
     marginBottom: 4,
-    textAlign: 'center',
+    textAlign: "center",
   },
   userEmail: {
     fontSize: 16,
     color: COLORS.textLight,
     marginBottom: 8,
-    textAlign: 'center',
+    textAlign: "center",
   },
   joinDate: {
     fontSize: 14,
     color: COLORS.textLight,
-    textAlign: 'center',
+    textAlign: "center",
   },
   editBtn: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     backgroundColor: COLORS.background,
     paddingHorizontal: 20,
     paddingVertical: 12,
@@ -109,7 +109,7 @@ export const profileStyles = StyleSheet.create({
   },
   editBtnText: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
     color: COLORS.primary,
     marginLeft: 8,
   },
@@ -121,7 +121,7 @@ export const profileStyles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     color: COLORS.text,
     marginBottom: 12,
     marginLeft: 4,
@@ -130,9 +130,9 @@ export const profileStyles = StyleSheet.create({
   // Item Styles
   item: {
     backgroundColor: COLORS.card,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     paddingVertical: 16,
     paddingHorizontal: 20,
     marginBottom: 2,
@@ -144,8 +144,8 @@ export const profileStyles = StyleSheet.create({
     elevation: 2,
   },
   itemLeft: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     flex: 1,
   },
   itemIcon: {
@@ -153,8 +153,8 @@ export const profileStyles = StyleSheet.create({
     height: 44,
     borderRadius: 22,
     backgroundColor: COLORS.background,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     marginRight: 16,
     borderWidth: 1,
     borderColor: COLORS.border,
@@ -164,7 +164,7 @@ export const profileStyles = StyleSheet.create({
   },
   itemTitle: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
     color: COLORS.text,
     marginBottom: 2,
   },
@@ -174,8 +174,8 @@ export const profileStyles = StyleSheet.create({
     lineHeight: 18,
   },
   itemRight: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 8,
   },
 
@@ -188,8 +188,8 @@ export const profileStyles = StyleSheet.create({
 
   // Stats Cards (if needed for future features)
   statsContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
     marginHorizontal: 20,
     marginBottom: 24,
   },
@@ -199,7 +199,7 @@ export const profileStyles = StyleSheet.create({
     marginHorizontal: 6,
     padding: 20,
     borderRadius: 16,
-    alignItems: 'center',
+    alignItems: "center",
     shadowColor: COLORS.shadow,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.08,
@@ -208,14 +208,14 @@ export const profileStyles = StyleSheet.create({
   },
   statNumber: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     color: COLORS.primary,
     marginBottom: 4,
   },
   statLabel: {
     fontSize: 14,
     color: COLORS.textLight,
-    textAlign: 'center',
+    textAlign: "center",
   },
 
   // Badge Styles (for premium features, etc.)
@@ -224,20 +224,20 @@ export const profileStyles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 6,
     borderRadius: 20,
-    alignSelf: 'flex-start',
+    alignSelf: "flex-start",
     marginTop: 8,
   },
   badgeText: {
     fontSize: 12,
-    fontWeight: '600',
+    fontWeight: "600",
     color: COLORS.white,
   },
 
   // Loading States
   loadingContainer: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     backgroundColor: COLORS.background,
   },
   loadingText: {
@@ -248,8 +248,8 @@ export const profileStyles = StyleSheet.create({
 
   // Empty States
   emptyState: {
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     padding: 40,
   },
   emptyStateIcon: {
@@ -257,21 +257,21 @@ export const profileStyles = StyleSheet.create({
     height: 80,
     borderRadius: 40,
     backgroundColor: COLORS.border,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     marginBottom: 16,
   },
   emptyStateTitle: {
     fontSize: 18,
-    fontWeight: '600',
+    fontWeight: "600",
     color: COLORS.text,
     marginBottom: 8,
-    textAlign: 'center',
+    textAlign: "center",
   },
   emptyStateDescription: {
     fontSize: 14,
     color: COLORS.textLight,
-    textAlign: 'center',
+    textAlign: "center",
     lineHeight: 20,
   },
 
@@ -284,7 +284,7 @@ export const profileStyles = StyleSheet.create({
   },
   inputLabel: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
     color: COLORS.text,
     marginBottom: 8,
   },
@@ -312,7 +312,7 @@ export const profileStyles = StyleSheet.create({
     backgroundColor: COLORS.primary,
     paddingVertical: 16,
     borderRadius: 12,
-    alignItems: 'center',
+    alignItems: "center",
     marginVertical: 8,
     shadowColor: COLORS.shadow,
     shadowOffset: { width: 0, height: 4 },
@@ -322,24 +322,24 @@ export const profileStyles = StyleSheet.create({
   },
   primaryButtonText: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
     color: COLORS.white,
   },
   secondaryButton: {
     backgroundColor: COLORS.background,
     paddingVertical: 16,
     borderRadius: 12,
-    alignItems: 'center',
+    alignItems: "center",
     marginVertical: 8,
     borderWidth: 1.5,
     borderColor: COLORS.border,
   },
   secondaryButtonText: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
     color: COLORS.text,
   },
-  
+
   // Responsive Design
   ...(width < 375 && {
     headerCard: {
@@ -360,4 +360,4 @@ export const profileStyles = StyleSheet.create({
       fontSize: 15,
     },
   }),
-})
+});

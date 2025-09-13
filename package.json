@@ -1,0 +1,13 @@
+{
+  "name": "sih-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write .",
+    "lint:mobile": "cd mobile && npm run lint"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11"
+  }
+}

@@ -3,15 +3,8 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"]
     }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "app/index.jsx",
-    "app/_layout.jsx"
-  ]
+  "include": ["**/*.ts", "**/*.tsx", "app/index.jsx", "app/_layout.jsx"]
 }
